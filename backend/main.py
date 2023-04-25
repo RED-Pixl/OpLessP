@@ -1,5 +1,6 @@
 from flask import Flask
 import time
+import database
 
 app = Flask(__name__)
 runningSince = time.time()
@@ -16,12 +17,12 @@ def test():
             },
             # all endpoint-specific information belongs in "body"
             "body": {
-                "test": "Hello Client!"
+                "test": "hello client!"
             }
         }
 
 
 if __name__ == "__main__":
     # starting the backend
-    # for production, debug should be set to False
+    database.create()
     app.run(debug=True)
