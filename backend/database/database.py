@@ -2,10 +2,10 @@ import sqlite3
 from sqlite3 import Error
 
 # name of the SQL script file to execute
-sql_file = "script.sql"
+sql_file = "database/script.sql"
 
 # connect to the database
-conn = sqlite3.connect("database.db")
+conn = sqlite3.connect("database/database.db")
 
 
 # Executing the script

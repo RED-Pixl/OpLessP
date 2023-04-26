@@ -1,6 +1,6 @@
 from flask import Flask
 import time
-import database
+from backend.database import database
 
 app = Flask(__name__)
 runningSince = time.time()
