@@ -1,6 +1,5 @@
 from flask import Flask
 import time
-from database import database
 
 app = Flask(__name__)
 runningSince = time.time()
@@ -24,5 +23,4 @@ def test():
 
 if __name__ == "__main__":
     # starting the backend
-    database.create()
     app.run(debug=True)
