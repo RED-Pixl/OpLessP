@@ -17,7 +17,7 @@ def test():
             },
             # all endpoint-specific information belongs in "body"
             "body": {
-                "test": "hello client!"
+                "test": "Hello client!"
             }
         }
 
